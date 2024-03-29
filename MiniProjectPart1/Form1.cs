@@ -151,7 +151,7 @@ namespace MiniProjectPart1
             }
             else
             {
-                MessageBox.Show("Please enter valid town names");
+                MessageBox.Show("Please enter a valid country name");
             }
         }
 
@@ -161,7 +161,7 @@ namespace MiniProjectPart1
             {
                 using (SqlConnection con = new SqlConnection(@"Data Source=LAB108PC13\SQLEXPRESS;Initial Catalog=TourismNew;Integrated Security=True"))
                 {
-                    using (SqlCommand cmd = new SqlCommand("DELETE FROM Towns WHERE CountryName = @country", con))
+                    using (SqlCommand cmd = new SqlCommand("DELETE FROM Country WHERE CountryName = @country", con))
                     {
                         cmd.Parameters.AddWithValue("@country", countryTextBox.Text);
                         con.Open();
