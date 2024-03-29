@@ -23,25 +23,26 @@ namespace MiniProjectPart1
 
             string username = usernameTextBox.Text;
             string password = passwordTextBox.Text;
-            if (username.Contains("admin") && password.Contains("admin"))
-            {
-                IsAdmin = true;
-                DialogResult = DialogResult.OK;
-                Form2 steve = new Form2(true);
-                steve.Show();
-            }
-            
-            else if (username.Contains("user") && password.Contains("user"))
-            {
-                IsAdmin = false;
-                DialogResult = DialogResult.OK;
-                Form2 steve = new Form2(true);
-                steve.Show();
-            }
-            else
-            {
-                MessageBox.Show("Sorry, not a user!");
-            }
+           if (username.Contains("admin") && password.Contains("admin"))
+{
+    IsAdmin = true;
+    DialogResult = DialogResult.OK;
+    Form2 steve = new Form2(true);
+    steve.Show();
+    steve.EnableAdminButton(true); // Enable adminButton for admin
+}
+else if (username.Contains("user") && password.Contains("user"))
+{
+    IsAdmin = false;
+    DialogResult = DialogResult.OK;
+    Form2 steve = new Form2(true);
+    steve.Show();
+    steve.EnableAdminButton(false); // Disable adminButton for non-admin users
+}
+else
+{
+    MessageBox.Show("Invalid username or password. Please try again.");
+}
 
         }
 
