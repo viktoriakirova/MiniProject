@@ -34,7 +34,7 @@ namespace MiniProjectPart1
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Tourism;Integrated Security=True"))
+                using (SqlConnection connection = new SqlConnection(@"Data Source=LAB108PC13\SQLEXPRESS;Initial Catalog=TourismNew;Integrated Security=True"))
                 {
                     string query = "SELECT CountryName FROM Country";
                     using (SqlCommand command = new SqlCommand(query, connection))
@@ -59,7 +59,7 @@ namespace MiniProjectPart1
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Tourism;Integrated Security=True"))
+                using (SqlConnection connection = new SqlConnection(@"Data Source=LAB108PC13\SQLEXPRESS;Initial Catalog=TourismNew;Integrated Security=True"))
                 {
                     string query = "SELECT TownName FROM Towns";
                     using (SqlCommand command = new SqlCommand(query, connection))

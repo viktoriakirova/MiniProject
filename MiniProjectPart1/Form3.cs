@@ -20,23 +20,29 @@ namespace MiniProjectPart1
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            
+
             string username = usernameTextBox.Text;
             string password = passwordTextBox.Text;
-            if (username.Contains("*") && password.Contains("*"))
+            if (username.Contains("admin") && password.Contains("admin"))
             {
                 IsAdmin = true;
                 DialogResult = DialogResult.OK;
                 Form2 steve = new Form2(true);
                 steve.Show();
             }
-            else
+            
+            else if (username.Contains("user") && password.Contains("user"))
             {
                 IsAdmin = false;
                 DialogResult = DialogResult.OK;
-                Form2 steve = new Form2(false);
+                Form2 steve = new Form2(true);
                 steve.Show();
             }
+            else
+            {
+                MessageBox.Show("Sorry, not a user!");
+            }
+
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
