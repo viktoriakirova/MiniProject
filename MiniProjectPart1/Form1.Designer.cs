@@ -80,7 +80,7 @@
             // 
             // replacedTownTextBox
             // 
-            replacedTownTextBox.Location = new Point(356, 282);
+            replacedTownTextBox.Location = new Point(325, 211);
             replacedTownTextBox.Margin = new Padding(4, 5, 4, 5);
             replacedTownTextBox.Name = "replacedTownTextBox";
             replacedTownTextBox.Size = new Size(141, 31);
@@ -88,7 +88,7 @@
             // 
             // townTextBox
             // 
-            townTextBox.Location = new Point(356, 167);
+            townTextBox.Location = new Point(325, 96);
             townTextBox.Margin = new Padding(4, 5, 4, 5);
             townTextBox.Name = "townTextBox";
             townTextBox.Size = new Size(141, 31);
@@ -97,7 +97,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(220, 172);
+            label1.Location = new Point(264, 107);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(53, 25);
@@ -107,27 +107,27 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(181, 295);
+            label2.Location = new Point(232, 211);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(159, 25);
+            label2.Size = new Size(72, 25);
             label2.TabIndex = 6;
-            label2.Text = "Replace town with:";
+            label2.Text = "Replace";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(587, 288);
+            label3.Location = new Point(692, 217);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(175, 25);
+            label3.Size = new Size(72, 25);
             label3.TabIndex = 10;
-            label3.Text = "Replace country with";
+            label3.Text = "Replace";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(637, 170);
+            label4.Location = new Point(692, 107);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(75, 25);
@@ -136,7 +136,7 @@
             // 
             // countryTextBox
             // 
-            countryTextBox.Location = new Point(806, 172);
+            countryTextBox.Location = new Point(775, 101);
             countryTextBox.Margin = new Padding(4, 5, 4, 5);
             countryTextBox.Name = "countryTextBox";
             countryTextBox.Size = new Size(141, 31);
@@ -144,7 +144,7 @@
             // 
             // replaceCountryTextBox
             // 
-            replaceCountryTextBox.Location = new Point(806, 282);
+            replaceCountryTextBox.Location = new Point(775, 211);
             replaceCountryTextBox.Margin = new Padding(4, 5, 4, 5);
             replaceCountryTextBox.Name = "replaceCountryTextBox";
             replaceCountryTextBox.Size = new Size(141, 31);
