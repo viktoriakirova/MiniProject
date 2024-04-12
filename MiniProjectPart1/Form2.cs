@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace MiniProjectPart1
 {
@@ -26,24 +18,33 @@ namespace MiniProjectPart1
             }
         }
 
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        public void EnableAdminButton (bool admin)
         {
-
+            if (admin)
+            {
+                adminButton.Enabled = true;
+                adminButton.Visible = true;
+            }
+            else
+            {
+                adminButton.Enabled = false;   
+                adminButton.Visible = false;
+            }
         }
         private void PopulateCountriesComboBox()
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(@"Data Source=LAB108PC13\SQLEXPRESS;Initial Catalog=TourismNew;Integrated Security=True"))
+                using (SqlConnection connection = new SqlConnection(@"Data Source=LAB108PC11\SQLEXPRESS;Initial Catalog=db;Integrated Security=True"))
                 {
-                    string query = "SELECT CountryName FROM Country";
+                    string query = "SELECT country FROM Countries";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         connection.Open();
                         SqlDataReader reader = command.ExecuteReader();
                         while (reader.Read())
                         {
-                            comboBoxCountries.Items.Add(reader["CountryName"].ToString());
+                            comboBoxCountries.Items.Add(reader["country"].ToString());
                         }
                         reader.Close();
                     }
@@ -59,16 +60,16 @@ namespace MiniProjectPart1
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(@"Data Source=LAB108PC13\SQLEXPRESS;Initial Catalog=TourismNew;Integrated Security=True"))
+                using (SqlConnection connection = new SqlConnection(@"Data Source=LAB108PC11\SQLEXPRESS;Initial Catalog=db;Integrated Security=True"))
                 {
-                    string query = "SELECT TownName FROM Towns";
+                    string query = "SELECT town FROM Towns";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         connection.Open();
                         SqlDataReader reader = command.ExecuteReader();
                         while (reader.Read())
                         {
-                            comboBoxTowns.Items.Add(reader["TownName"].ToString());
+                            comboBoxTowns.Items.Add(reader["town"].ToString());
                         }
                         reader.Close();
                     }
@@ -91,7 +92,7 @@ namespace MiniProjectPart1
                 form1.Show();
 
                 // Enable admin button if the user is an admin
-                
+
             }
         }
     }

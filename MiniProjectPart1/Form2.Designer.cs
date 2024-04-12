@@ -35,38 +35,42 @@
             // 
             // adminButton
             // 
-            adminButton.Location = new Point(198, 181);
+            adminButton.Location = new Point(200, 233);
+            adminButton.Margin = new Padding(4, 5, 4, 5);
             adminButton.Name = "adminButton";
-            adminButton.Size = new Size(121, 23);
+            adminButton.Size = new Size(173, 38);
             adminButton.TabIndex = 0;
-            adminButton.Text = "Make Changes";
+            adminButton.Text = "Change";
             adminButton.UseVisualStyleBackColor = true;
             adminButton.Click += adminButton_Click;
             // 
             // comboBoxTowns
             // 
             comboBoxTowns.FormattingEnabled = true;
-            comboBoxTowns.Location = new Point(291, 96);
+            comboBoxTowns.Location = new Point(316, 160);
+            comboBoxTowns.Margin = new Padding(4, 5, 4, 5);
             comboBoxTowns.Name = "comboBoxTowns";
-            comboBoxTowns.Size = new Size(121, 23);
+            comboBoxTowns.Size = new Size(171, 33);
             comboBoxTowns.TabIndex = 1;
             // 
             // comboBoxCountries
             // 
             comboBoxCountries.FormattingEnabled = true;
-            comboBoxCountries.Location = new Point(87, 96);
+            comboBoxCountries.Location = new Point(124, 160);
+            comboBoxCountries.Margin = new Padding(4, 5, 4, 5);
             comboBoxCountries.Name = "comboBoxCountries";
-            comboBoxCountries.Size = new Size(121, 23);
+            comboBoxCountries.Size = new Size(171, 33);
             comboBoxCountries.TabIndex = 2;
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(696, 415);
             Controls.Add(comboBoxCountries);
             Controls.Add(comboBoxTowns);
             Controls.Add(adminButton);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Form2";
             Text = "Form2";
             ResumeLayout(false);

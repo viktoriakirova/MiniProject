@@ -46,41 +46,41 @@
             // 
             // button1
             // 
-            button1.Location = new Point(296, 371);
+            button1.Location = new Point(169, 224);
             button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
-            button1.Size = new Size(128, 38);
+            button1.Size = new Size(128, 32);
             button1.TabIndex = 0;
-            button1.Text = "Add Town";
+            button1.Text = "Add";
             button1.UseVisualStyleBackColor = true;
             button1.Click += AddTownButton_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(296, 443);
+            button2.Location = new Point(169, 296);
             button2.Margin = new Padding(4, 5, 4, 5);
             button2.Name = "button2";
             button2.RightToLeft = RightToLeft.No;
-            button2.Size = new Size(128, 38);
+            button2.Size = new Size(128, 32);
             button2.TabIndex = 1;
-            button2.Text = "Update Town";
+            button2.Text = "Update";
             button2.UseVisualStyleBackColor = true;
             button2.Click += UpdateTownButton_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(296, 513);
+            button3.Location = new Point(169, 366);
             button3.Margin = new Padding(4, 5, 4, 5);
             button3.Name = "button3";
-            button3.Size = new Size(128, 38);
+            button3.Size = new Size(128, 32);
             button3.TabIndex = 2;
-            button3.Text = "Delete Town";
+            button3.Text = "Delete";
             button3.UseVisualStyleBackColor = true;
             button3.Click += DeleteTownButton_Click;
             // 
             // replacedTownTextBox
             // 
-            replacedTownTextBox.Location = new Point(325, 211);
+            replacedTownTextBox.Location = new Point(162, 145);
             replacedTownTextBox.Margin = new Padding(4, 5, 4, 5);
             replacedTownTextBox.Name = "replacedTownTextBox";
             replacedTownTextBox.Size = new Size(141, 31);
@@ -88,7 +88,7 @@
             // 
             // townTextBox
             // 
-            townTextBox.Location = new Point(325, 96);
+            townTextBox.Location = new Point(162, 99);
             townTextBox.Margin = new Padding(4, 5, 4, 5);
             townTextBox.Name = "townTextBox";
             townTextBox.Size = new Size(141, 31);
@@ -97,7 +97,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(264, 107);
+            label1.Location = new Point(101, 110);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(53, 25);
@@ -107,7 +107,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(232, 211);
+            label2.Location = new Point(69, 145);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(72, 25);
@@ -117,7 +117,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(692, 217);
+            label3.Location = new Point(529, 151);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(72, 25);
@@ -127,7 +127,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(692, 107);
+            label4.Location = new Point(529, 110);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(75, 25);
@@ -136,7 +136,7 @@
             // 
             // countryTextBox
             // 
-            countryTextBox.Location = new Point(775, 101);
+            countryTextBox.Location = new Point(612, 104);
             countryTextBox.Margin = new Padding(4, 5, 4, 5);
             countryTextBox.Name = "countryTextBox";
             countryTextBox.Size = new Size(141, 31);
@@ -144,7 +144,7 @@
             // 
             // replaceCountryTextBox
             // 
-            replaceCountryTextBox.Location = new Point(775, 211);
+            replaceCountryTextBox.Location = new Point(612, 145);
             replaceCountryTextBox.Margin = new Padding(4, 5, 4, 5);
             replaceCountryTextBox.Name = "replaceCountryTextBox";
             replaceCountryTextBox.Size = new Size(141, 31);
@@ -152,35 +152,35 @@
             // 
             // button4
             // 
-            button4.Location = new Point(739, 513);
+            button4.Location = new Point(612, 366);
             button4.Margin = new Padding(4, 5, 4, 5);
             button4.Name = "button4";
-            button4.Size = new Size(164, 38);
+            button4.Size = new Size(164, 32);
             button4.TabIndex = 13;
-            button4.Text = "Delete Country";
+            button4.Text = "Delete";
             button4.UseVisualStyleBackColor = true;
             button4.Click += DeleCountryButton_Click;
             // 
             // button5
             // 
-            button5.Location = new Point(739, 443);
+            button5.Location = new Point(612, 296);
             button5.Margin = new Padding(4, 5, 4, 5);
             button5.Name = "button5";
             button5.RightToLeft = RightToLeft.No;
-            button5.Size = new Size(164, 38);
+            button5.Size = new Size(164, 32);
             button5.TabIndex = 12;
-            button5.Text = "Update Country";
+            button5.Text = "Update";
             button5.UseVisualStyleBackColor = true;
             button5.Click += UpdateCountryName_Click;
             // 
             // button6
             // 
-            button6.Location = new Point(728, 371);
+            button6.Location = new Point(601, 224);
             button6.Margin = new Padding(4, 5, 4, 5);
             button6.Name = "button6";
-            button6.Size = new Size(175, 38);
+            button6.Size = new Size(175, 32);
             button6.TabIndex = 11;
-            button6.Text = "Add Country";
+            button6.Text = "Add";
             button6.UseVisualStyleBackColor = true;
             button6.Click += AddCountryButton_Click;
             // 
@@ -188,7 +188,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1143, 750);
+            ClientSize = new Size(963, 750);
             Controls.Add(button4);
             Controls.Add(button5);
             Controls.Add(button6);

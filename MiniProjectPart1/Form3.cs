@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
+﻿
 namespace MiniProjectPart1
 {
     public partial class Form3 : Form
@@ -27,17 +18,17 @@ namespace MiniProjectPart1
             {
                 IsAdmin = true;
                 DialogResult = DialogResult.OK;
-                Form2 steve = new Form2(true);
-                steve.Show();
-                steve.EnableAdminButton(true); // Enable adminButton for admin
+                Form2 Form2 = new Form2(true);
+                Form2.Show();
+                Form2.EnableAdminButton(true); // Enable adminButton for admin
             }
             else if (username.Contains("user") && password.Contains("user"))
             {
                 IsAdmin = false;
                 DialogResult = DialogResult.OK;
-                Form2 steve = new Form2(true);
-                steve.Show();
-                steve.EnableAdminButton(false); // Disable adminButton for non-admin users
+                Form2 Form2 = new Form2(true);
+                Form2.Show();
+                Form2.EnableAdminButton(false); // Disable adminButton for non-admin users
             }
             else
             {
@@ -56,9 +47,5 @@ namespace MiniProjectPart1
 
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
