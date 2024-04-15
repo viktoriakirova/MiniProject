@@ -34,6 +34,7 @@
             label2 = new Label();
             passwordTextBox = new TextBox();
             usernameTextBox = new TextBox();
+            RegisterButton = new Button();
             SuspendLayout();
             // 
             // button1
@@ -96,11 +97,22 @@
             usernameTextBox.TabIndex = 5;
             usernameTextBox.TextChanged += usernameTextBox_TextChanged;
             // 
+            // RegisterButton
+            // 
+            RegisterButton.Location = new Point(435, 275);
+            RegisterButton.Name = "RegisterButton";
+            RegisterButton.Size = new Size(112, 34);
+            RegisterButton.TabIndex = 6;
+            RegisterButton.Text = "Register";
+            RegisterButton.UseVisualStyleBackColor = true;
+            RegisterButton.Click += RegisterButton_Click;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(719, 513);
+            Controls.Add(RegisterButton);
             Controls.Add(usernameTextBox);
             Controls.Add(passwordTextBox);
             Controls.Add(label2);
@@ -122,5 +134,6 @@
         private Label label2;
         private TextBox passwordTextBox;
         private TextBox usernameTextBox;
+        private Button RegisterButton;
     }
 }
