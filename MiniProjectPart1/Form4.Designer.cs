@@ -33,7 +33,8 @@
             label3 = new Label();
             usernameTextBox = new TextBox();
             passwordTextBox = new TextBox();
-            textBox3 = new TextBox();
+            PasswordCheckTextBox = new TextBox();
+            RegisterButton = new Button();
             SuspendLayout();
             // 
             // label1
@@ -78,20 +79,31 @@
             passwordTextBox.Size = new Size(150, 31);
             passwordTextBox.TabIndex = 4;
             // 
-            // textBox3
+            // PasswordCheckTextBox
             // 
-            textBox3.Location = new Point(192, 228);
-            textBox3.Name = "textBox3";
-            textBox3.PasswordChar = '*';
-            textBox3.Size = new Size(150, 31);
-            textBox3.TabIndex = 5;
+            PasswordCheckTextBox.Location = new Point(192, 228);
+            PasswordCheckTextBox.Name = "PasswordCheckTextBox";
+            PasswordCheckTextBox.PasswordChar = '*';
+            PasswordCheckTextBox.Size = new Size(150, 31);
+            PasswordCheckTextBox.TabIndex = 5;
+            // 
+            // RegisterButton
+            // 
+            RegisterButton.Location = new Point(192, 293);
+            RegisterButton.Name = "RegisterButton";
+            RegisterButton.Size = new Size(112, 34);
+            RegisterButton.TabIndex = 6;
+            RegisterButton.Text = "Register";
+            RegisterButton.UseVisualStyleBackColor = true;
+            RegisterButton.Click += RegisterButton_Click;
             // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox3);
+            Controls.Add(RegisterButton);
+            Controls.Add(PasswordCheckTextBox);
             Controls.Add(passwordTextBox);
             Controls.Add(usernameTextBox);
             Controls.Add(label3);
@@ -110,6 +122,7 @@
         private Label label3;
         private TextBox usernameTextBox;
         private TextBox passwordTextBox;
-        private TextBox textBox3;
+        private TextBox PasswordCheckTextBox;
+        private Button RegisterButton;
     }
 }
