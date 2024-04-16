@@ -1,16 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
+﻿using System.Data.SqlClient;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace MiniProjectPart1
 {
@@ -20,7 +11,7 @@ namespace MiniProjectPart1
         {
             InitializeComponent();
         }
-      
+
         private void RegisterButton_Click(object sender, EventArgs e)
         {
             string username = usernameTextBox.Text;
@@ -40,7 +31,7 @@ namespace MiniProjectPart1
             }
             string salt = DateTime.Now.ToString();
             string hashedPassword = hashPassword($"{password}{salt}");
-            string connectionString = @"Data Source=LAB108PC12\SQLEXPRESS;Initial Catalog=Tourism;Integrated Security=True";
+            string connectionString = @"Data Source=LAB108PC11\SQLEXPRESS;Initial Catalog=db;Integrated Security=True";
             string hashPassword(string password)
             {
                 SHA256 hashAlgorithm = SHA256.Create();
@@ -63,6 +54,7 @@ namespace MiniProjectPart1
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("User registered successfully.");
+                        Form4 form4 = new Form4();
                     }
                     else
                     {
@@ -70,12 +62,7 @@ namespace MiniProjectPart1
                     }
                 }
             }
-
-
-        
-
-        
-
+        }
     }
 }
 

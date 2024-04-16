@@ -28,7 +28,7 @@ namespace MiniProjectPart1
             }
             else
             {
-                using (SqlConnection con = new SqlConnection(@"Data Source=LAB108PC12\SQLEXPRESS;Initial Catalog=Tourism;Integrated Security=True"))
+                using (SqlConnection con = new SqlConnection(@"Data Source=LAB108PC11\SQLEXPRESS;Initial Catalog=db;Integrated Security=True"))
                 {
                     con.Open();
                     SqlCommand cmd = new SqlCommand("SELECT * FROM users WHERE username = @username", con);
@@ -39,8 +39,8 @@ namespace MiniProjectPart1
                     da.Fill(dt);
                     if (dt.Rows.Count > 0)
                     {
-                        string righthash = (string)dt.Rows[0]["PswdHash"];
-                        string salt = (string)dt.Rows[0]["TimeUser"];
+                        string righthash = (string)dt.Rows[0]["pwd"];
+                        string salt = (string)dt.Rows[0]["dateandtime"];
                         string userhash = hashPassword($"{password}{salt}");
                         if (righthash == userhash)
                         {
